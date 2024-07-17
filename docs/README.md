@@ -38,6 +38,8 @@ The `Manager` class is responsible for handling the game's state and managing va
   - The number of games the player has.
 - `medicineNum`: `public int { get; private set; }`
   - The number of medicine items the player has.
+- `bottleDestroyedNum`: `public int { get; private set; }`
+  - The number of bottles that the player destroyed.
 
 ### Gameplay Variables
 - `gasNum`: `public float { get; private set; }`
