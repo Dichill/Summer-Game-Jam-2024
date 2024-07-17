@@ -168,6 +168,12 @@ Defines possible locations in the game:
   - Decreases the game count by a specified value.
 - `public void setDestination(townLocations town)`
   - Sets the current destination.
+- `public void increaseBottleDestroyedCount(int value)`
+  - Increase the bottle destroyed by a specified value.
+- `public void decreaseBottleDestroyedCount(int value)`
+  - decrease the bottle destroyed by a specified value.
+- `public void setBottleDestroyedCount(int value)`
+  - set the bottle destroyed by a specified value.
 
 ### Gameplay Methods
 - `public void setGasCount(float value)`
