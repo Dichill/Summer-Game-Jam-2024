@@ -3,6 +3,12 @@
 ## Summary
 The `Manager` class is responsible for handling the game's state and managing various aspects of gameplay such as player information, in-game items, gameplay variables, and settings. This class also handles initializing the game and managing game timers.
 
+Usage Example
+```csharp
+Manager.GetInstance().currentMoney; // Gets the current Money
+Manager.GetInstance().increaseBottleDestroyedCount(1); // Increase the num of bottle destroyed by 1.
+```
+
 ## Variables
 
 ### Intro Setup Variables
@@ -168,14 +174,6 @@ Defines possible locations in the game:
   - Increases the game count by a specified value.
 - `public void decreaseGameCount(int value)`
   - Decreases the game count by a specified value.
-- `public void setDestination(townLocations town)`
-  - Sets the current destination.
-- `public void increaseBottleDestroyedCount(int value)`
-  - Increase the bottle destroyed by a specified value.
-- `public void decreaseBottleDestroyedCount(int value)`
-  - decrease the bottle destroyed by a specified value.
-- `public void setBottleDestroyedCount(int value)`
-  - set the bottle destroyed by a specified value.
 
 ### Gameplay Methods
 - `public void setGasCount(float value)`
@@ -194,6 +192,14 @@ Defines possible locations in the game:
   - Increases the number of random encounters.
 - `public void increaseFishCaught()`
   - Increases the number of fish caught.
+- `public void increaseBottleDestroyedCount(int value)`
+  - Increase the bottle destroyed by a specified value.
+- `public void decreaseBottleDestroyedCount(int value)`
+  - decrease the bottle destroyed by a specified value.
+- `public void setBottleDestroyedCount(int value)`
+  - set the bottle destroyed by a specified value.
+- `public void setDestination(townLocations town)`
+  - Sets the current destination.
 
 ### Settings Methods
 - `public void SetAudioVolume(float value)`
